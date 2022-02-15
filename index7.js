@@ -1,3 +1,14 @@
+
+function updateCss(){
+    $('#cssPanel').show()
+}
+$('#css').click(updateCss);
+
+function updateJs(){
+    $('#javascriptPanel').show()
+}
+$('#javascript').click(updateJs);
+
 function updateOutput(){
     $('iframe').contents().find('html').html(`
         <html>
@@ -13,3 +24,5 @@ function updateOutput(){
         </html>
     `)
 }
+
+$('#output').click(updateOutput);
